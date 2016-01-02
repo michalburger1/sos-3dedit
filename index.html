@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      body {
+        background: #444;
+        font-family: monospace;
+        margin: 0px;
+      }
+      textarea {
+        background: #444;
+        color: #fff;
+        outline: none;
+        resize: none;
+      }
+      textarea::selection {
+        background: #fa0;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="position:fixed;top:0px;bottom:0px;width:50%">
+      <div style="position:absolute;top:0px;bottom:0px;right:0px;left:0px;margin-left:5px">
+        <textarea id="textarea" spellcheck="false" style="margin:0px;border:0px;padding:0px;width:100%;height:100%"></textarea>
+      </div>
+    </div>
+    <div id="canvasWrapper" style="position:fixed;top:0px;bottom:0px;right:0px;width:50%">
+      <canvas id="canvas"></canvas>
+    </div>
+    <script type="text/javascript" src="shaders.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="camera.js"></script>
+  </body>
+</html>
